@@ -1,0 +1,131 @@
+{
+  "brand": "Genius Sports",
+  "source": "Genius Sports Brand Guidelines 2026",
+  "colors": {
+    "primary": {
+      "gs-blue": { "hex": "#0000DC", "rgb": [0, 0, 220], "cmyk": [100, 72, 0, 0], "pantone": "2728", "role": "Core brand color. Primary logo color on light backgrounds. Use selectively — not everywhere — to protect its impact." },
+      "gs-navy": { "hex": "#151B34", "rgb": [21, 27, 52], "cmyk": [84, 63, 0, 84], "pantone": "289", "role": "Lead color for everyday, multi-page/comms materials and Dark Mode backgrounds. Prevents GS Blue fatigue at scale." },
+      "gs-bright-green": { "hex": "#E1FF67", "rgb": [225, 255, 103], "cmyk": [10, 0, 75, 0], "pantone": "386", "role": "High-contrast accent color, adds energy." },
+      "gs-light-blue": { "hex": "#95ECFD", "rgb": [149, 236, 253], "cmyk": [40, 0, 10, 0], "pantone": "304", "role": "Lighter tonal complement to GS Blue, adds depth." },
+      "white": { "hex": "#FFFFFF", "role": "Should play a significant role in every color composition — gives other colors impact and communicates the tech side of the brand." }
+    },
+    "secondary": {
+      "light-green": { "hex": "#18C971", "rgb": [24, 201, 113], "cmyk": [65, 0, 75, 0], "pantone": "7479" },
+      "dark-green": { "hex": "#047C40", "rgb": [4, 124, 64], "cmyk": [90, 0, 90, 35], "pantone": "18-6031" },
+      "light-purple": { "hex": "#8AAAFD", "rgb": [138, 170, 253], "cmyk": [50, 35, 0, 0], "pantone": "2716" },
+      "dark-purple": { "hex": "#4337A8", "rgb": [67, 55, 168], "cmyk": [95, 100, 0, 0], "pantone": "18-3963" },
+      "light-orange": { "hex": "#FFEBAF", "rgb": [255, 235, 175], "cmyk": [0, 15, 45, 0], "pantone": "7401" },
+      "dark-orange": { "hex": "#FA5D00", "rgb": [250, 93, 0], "cmyk": [0, 70, 100, 0], "pantone": "16-1358" },
+      "light-red": { "hex": "#F76B6A", "rgb": [247, 107, 106], "cmyk": [0, 70, 60, 0], "pantone": "2345" },
+      "dark-red": { "hex": "#C20000", "rgb": [194, 0, 0], "cmyk": [0, 100, 90, 10], "pantone": "18-1664" },
+      "usage_note": "Created in complementary pairs but each is usable individually alongside the Primary palette. Selected tints at 75%/50%/25% are also approved for use."
+    },
+    "modes": {
+      "light": "White base + Primary palette, with darker Secondary colors as accents. Best for brand-led applications.",
+      "dark": "GS Navy base for majority of content, with Primary palette + light Secondary colors as accents and tones. Best for everyday comms and slide decks."
+    },
+    "accessibility": "All text/background color pairings must be checked against AA and AAA contrast standards for large and normal text (reference: colourcontrast.cc)."
+  },
+  "typography": {
+    "primary": {
+      "family": "Klarheit Kurrent",
+      "type": "Display typeface",
+      "usage": "Headlines, quotes, intro paragraphs — placements where impact is needed.",
+      "weights": ["Regular", "Book", "Bold"],
+      "notes": "Outlined versions of each weight also available. Bespoke, geometric with humanistic influences, large x-height, open counters.",
+      "asset_files": {
+        "location": "bundle/fonts/klarheit-kurrent-primary/",
+        "licensed_confirmed": ["KlarheitKurrent-Regular.[ttf/otf/woff/woff2/eot]", "KlarheitKurrent-Bold.[ttf/otf/woff/woff2/eot]"],
+        "LICENSE_FLAG": "Commercial license from Extraset Typefoundry (invoice ES210330-377, 30.03.2021, licensed to Kristian Belov / Genius Sports Group Limited). Covers Regular + Bold ONLY, capped at 1-3 computers and web use up to 10,000 views/month. This is NOT an open license like Red Hat Text — confirm with whoever manages font licensing at Genius Sports before using in Claude Design, since seat/traffic limits may not cover broader team or higher-traffic use.",
+        "unlicensed_file": "KlarheitKurrent-Book-UNLICENSED-VERIFY.ttf — a Book-weight file was supplied but does NOT appear on the invoice. Verify separate licensing exists for this weight before use; do not assume it's covered by the Regular/Bold license above."
+      }
+    },
+    "secondary": {
+      "family": "Inter",
+      "type": "Body/UI typeface (Google Fonts)",
+      "usage": "Body copy, UI text, long-form content, smaller text placements.",
+      "weights": ["Thin", "Light", "Regular", "SemiBold", "Bold", "+ matching italics"],
+      "notes": "Tall x-height, ink traps/bridges for legibility, slightly condensed for higher character counts per line.",
+      "DISCREPANCY_FLAG": "The brand guidelines deck names Inter as the secondary typeface, but the live SharePoint asset library's 'Secondary typeface' folder contains Red Hat Text font files instead. Confirm with the brand owner which is current before finalizing.",
+      "red_hat_text_asset_files": {
+        "location": "bundle/fonts/red-hat-text-secondary/",
+        "files": ["RedHatText-Regular.ttf", "RedHatText-Medium.ttf", "RedHatText-Bold.ttf", "RedHatText-Italic.ttf", "RedHatText-MediumItalic.ttf", "RedHatText-BoldItalic.ttf"],
+        "license": "SIL Open Font License 1.1 (OFL.txt included) — free to embed/bundle/redistribute, no seat or traffic caps, unlike Klarheit Kurrent.",
+        "status": "Files verified and ready to use. The only remaining question is which typeface (Inter or Red Hat Text) is actually current — that's a brand-owner decision, not an asset-readiness issue."
+      }
+    },
+    "scale": {
+      "headline": { "font": "Klarheit Kurrent Regular/Book", "example_size": "34pt", "leading": "font-size + 2pt", "tracking": "-10pt (-1 digital)" },
+      "sub-head": { "font": "Klarheit Kurrent Regular/Book" },
+      "standfirst-intro": { "font": "Klarheit Kurrent Regular" },
+      "quote": { "font": "Klarheit Kurrent Book" },
+      "body": { "font": "Inter Light/Regular", "example_size": "16pt", "leading": "font-size + 4pt", "tracking": "-5pt (-0.5 digital)" },
+      "bullet-points": { "font": "Inter Light/Regular", "notes": "Use an em-dash (—) as the bullet marker, echoing the Linear Graphic device." }
+    },
+    "leading_tracking_rule": "General rule: headline leading = font size + 2pt; body leading = font size + 4pt. Headline tracking = -10pt/-1; body tracking = -5pt/-0.5. Adjust per placement as needed."
+  },
+  "logo": {
+    "asset_files": {
+      "note": "Official vector artwork, sourced from SharePoint (Downloadable brand assets - logos, fonts / Our Company Logo / SVG). Standard + Small usage sets, both colorways. Use these files directly — do not regenerate the mark from a text description.",
+      "primary_logo": ["GENIUS_SPORTS_VERTICAL_BLUE_RGB.svg", "GENIUS_SPORTS_VERTICAL_WHITE_RGB.svg", "GENIUS_SPORTS_VERTICAL_SMALL_BLUE_RGB.svg", "GENIUS_SPORTS_VERTICAL_SMALL_WHITE_RGB.svg"],
+      "secondary_logo": ["GENIUS_SPORTS_HORIZONTAL_BLUE_RGB.svg", "GENIUS_SPORTS_HORIZONTAL_WHITE_RGB.svg", "GENIUS_SPORTS_HORIZONTAL_SMALL_BLUE_RGB.svg", "GENIUS_SPORTS_HORIZONTAL_SMALL_WHITE_RGB.svg"],
+      "symbol": ["GENIUS_SPORTS_MARQUE_BLUE_RGB.svg", "GENIUS_SPORTS_MARQUE_WHITE_RGB.svg", "GENIUS_SPORTS_MARQUE_SMALL_BLUE_RGB.svg", "GENIUS_SPORTS_MARQUE_SMALL_WHITE_RGB.svg"],
+      "wordmark": ["GENIUS_SPORTS_WORDMARK_BLUE_RGB.svg", "GENIUS_SPORTS_WORDMARK_WHITE_RGB.svg", "GENIUS_SPORTS_WORDMARK_SMALL_BLUE_RGB.svg", "GENIUS_SPORTS_WORDMARK_SMALL_WHITE_RGB.svg"],
+      "small_usage_rule": "Use the _SMALL_ variants below the breakpoints listed in `breakpoints_px` — they have adjusted stroke width/letter spacing for legibility at small sizes."
+    },
+    "variants": ["Primary Logo (Symbol + Wordmark, vertical lockup) — default", "Secondary Logo — use only when space doesn't fit Primary", "Symbol — standalone, minimal space or after brand already established", "Wordmark — standalone"],
+    "color_rules": {
+      "default": "GS Blue on light backgrounds",
+      "on_gs_blue": "White",
+      "low_contrast_fallback": "GS Navy",
+      "over_imagery_or_monochrome": "Black or White version"
+    },
+    "clear_space": "Minimum clear space = height and width of the 'G' in the Wordmark.",
+    "breakpoints_px": {
+      "primary_logo": "< 70px / 12.5mm switch to small-size artwork",
+      "secondary_logo": "< 110px / 20mm switch to small-size artwork",
+      "symbol": "< 40px / 7mm switch to small-size artwork",
+      "wordmark": "< 70px / 12.5mm switch to small-size artwork"
+    },
+    "rule": "Never recreate the logo — always use supplied artwork."
+  },
+  "iconography": {
+    "DISCREPANCY_FLAG": "The brand guidelines deck specifies Google Material Symbols as the icon system. The live 'Branded Icons' SharePoint folder instead contains a custom two-tone icon set (33 icons received, more may exist — user indicated ~60 total but couldn't send the rest). This is a bespoke set, not a generic library skin. Confirm with the brand owner which system is actually current.",
+    "asset_files": {
+      "location": "bundle/icons-branded/",
+      "count": "33 of an estimated ~60 total (partial set — sender was unable to upload the remainder)",
+      "naming": "Plain name = dark/standard colorway (e.g. Basketball.png); name + 'White' suffix = light colorway (e.g. BasketballWhite.png). 17 of the 33 have no White counterpart in what was received.",
+      "icons_received": ["Basketball", "Cloud", "Data", "Distribute", "Engage", "Euros", "Fans", "Field", "Football", "Live_Data", "Live_Pricing", "Major_Sports", "Monetise", "Personalise", "Platform", "Pounds", "Pricing", "Reach", "Soccer", "Social", "Stadium", "Statistics", "Tier_1-Support", "VR-3D", "Video"]
+    },
+    "verified_colors": {
+      "dark_standard_colorway": { "base": "#141A36 (near-identical to GS Navy #151B34, ~1-2 unit channel difference — likely export/compression artifact)", "accent": "#FF4F5E — DOES NOT MATCH any documented color in the Primary or Secondary palette." },
+      "white_colorway": { "base": "#FFFFFF", "accent": "#F76B6A — this IS the documented 'Light Red' secondary color exactly." },
+      "INTERNAL_INCONSISTENCY_FLAG": "The two colorways of the same icon set use two different accent reds (#FF4F5E vs #F76B6A) for what should be the same brand accent. Only the White colorway's accent matches an official palette color. Verify with brand owner which is correct before using #FF4F5E anywhere — it may be an unauthorized drift color, an update not yet reflected in the documented palette, or an export error."
+    },
+    "usage": "Functional pictograms only — not decorative illustration. (Per brand deck's general iconography guidance, which should still apply regardless of which specific icon system is confirmed as current.)"
+  },
+  "graphic_devices": {
+    "linear_graphic": {
+      "description": "Step-blend of lines increasing in weight, symbolizing progression from precise tech to bold sport energy.",
+      "variants": ["32-step blend (larger placements)", "16-step blend (smaller sizes, more impact)"],
+      "base_ratio": "16:9 (can be cropped)",
+      "placement": ["horizontal", "vertical", "45° angle"],
+      "rule": "Always show the thin-to-thick progression. Use supplied artwork only — never recreate."
+    },
+    "symbol_supergraphic": {
+      "description": "The logo Symbol used at large scale as a background/graphic device.",
+      "rule": "Use sparingly for high-impact moments; choose subtle color combinations when used as a background to avoid overdominance."
+    }
+  },
+  "imagery": {
+    "sports_photography": "Authentic, licensed only — no AI-generated. Focus on live action, stands, training ground, analytics. Touches of blue preferred for cohesion.",
+    "profile_photography": "Real people, real environments — reportage style or studio with brand-color background.",
+    "product_mockups": "Real device packshots, minimal controlled art direction; the on-screen content is the hero.",
+    "ai_generated_imagery": "Permitted only when stock/real shoots aren't feasible; must avoid uncanny/over-exaggerated details and incorrect specifics (e.g. pitch markings).",
+    "ai_enhanced_imagery": "Permitted for augmenting real sport content (e.g. overlaying tech visualizations) — must feel authentic."
+  },
+  "motion": {
+    "principles": ["Immediate — bold transitions, match cuts, rapid pace", "Intelligent — purpose-driven animation for storytelling/deep dives", "Immersive — engagement-first movement that draws viewers in"],
+    "rule": "All three principles should be balanced together, never used in isolation."
+  }
+}
